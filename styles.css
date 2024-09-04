@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2C3E50;
+    background-color: #F7F3E9;
+    line-height: 1.6;
+}
+
+
+nav {
+    background-color: #B03A2E;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #F7F3E9;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #F7F3E9; 
+    padding: 8px;
+    display: block;
+}
+
+.nav-links .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-links .dropdown-toggle {
+    text-decoration: none;
+    color: #F7F3E9;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-links .dropdown-toggle:hover {
+    color: #B03A2E;
+    background-color: #F7F3E9;
+    border-radius: 4px;
+}
+
+.nav-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #F7F3E9;
+    padding: 10px;
+    border-radius: 8px;
+    list-style: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.nav-links .dropdown-menu li {
+    margin: 5px 0;
+}
+
+.nav-links .dropdown-menu li a {
+    text-decoration: none;
+    color: #B03A2E;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links .dropdown-menu li a:hover {
+    background-color: #E5B65E; 
+    color: #2C3E50;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.open-section {
+    background: url('i1.jpg') no-repeat center center/cover;
+    color: #F7F3E9;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.open-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #050101;
+}
+
+.open-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.open-section .cta-button {
+    padding: 10px 20px;
+    background-color: #E5B65E; 
+    color: #2C3E50;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.open-section input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 2px solid #B03A2E;
+}
+
+section {
+    padding: 40px 20px;
+    background-color: #FDF6E3; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #B03A2E;
+}
+
+.featured-products, .artisan-stories, .recommendations, .live-events, .community-highlights, .subscription-boxes, .testimonials, .blog-highlights {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-item, .artisan-item, .recommendation-item, .live-event-item, .community-item, .subscription-item, .testimonial-item, .blog-item {
+    text-align: center;
+    width: 300px;
+    background-color: #F7F3E9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img, .artisan-item img, .recommendation-item img, .live-event-item img, .community-item img, .subscription-item img, .blog-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: #F7F3E9;
+    padding: 40px 20px;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .quick-links a {
+    text-decoration: none;
+    color: #F7F3E9;
+}
+
+footer .newsletter input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+footer .newsletter button {
+    padding: 10px 20px;
+    background-color: #B03A2E;
+    color: #F7F3E9;
+    border: none;
+    border-radius: 5px;
+}
+
+footer .social-media a {
+    margin-right: 10px;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
+}

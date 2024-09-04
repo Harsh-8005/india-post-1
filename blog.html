@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blogs</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">Craft<span>Creation</span></a>
+            <a href="myblog.html" class="login">Write Your's</a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">Handcrafted Elegance</h2>
+            <span class="home-subtitle">Discover the Art of Authentic Craftsmanship</span>
+        </div>
+    </section>
+
+    <section class="about container" id="about">
+        <div class="contentBx">
+            <h2 class="titleText">Celebrate Artisan Excellence</h2>
+            <p class="title-text">
+                Welcome to our marketplace, where tradition meets creativity. Explore our curated selection of handcrafted items, each piece telling a story of dedication and skill. From intricate textiles to elegant pottery, our artisans pour their hearts into every creation.
+                <br><br>
+                Whether you're seeking a unique gift or something special for your home, our collection offers a diverse range of products that celebrate the beauty of handmade craftsmanship.
+                <br><br>
+                Thank you for supporting our community of artisans. Together, we keep the spirit of craftsmanship alive!
+            </p>
+            <a href="#" class="btn2">Explore More</a>
+        </div>
+        <div class="imgBx">
+            <img src="i1.jpg" alt="" class="fitBg">
+        </div>
+    </section>
+
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">All</span>
+        <span class="filter-item" data-filter="tech">Textiles</span>
+        <span class="filter-item" data-filter="food">Pottery</span>
+        <span class="filter-item" data-filter="news">Jewelry</span>
+    </div>
+    
+    <div class="post container">
+        <!-- Post 1 -->
+        <div class="post-box tech" onclick="openPopup('popup1')">
+            <img src="img1.jpg" alt="" class="post-img">
+            <h2 class="category">Textiles</h2>
+            <a href="#" class="post-title">The Art of Handwoven Fabrics</a>
+            <span class="post-date">12 Feb 2024</span>
+            <p class="post-description">Discover the intricate process behind handwoven textiles, where each thread is woven with care and tradition. Add a touch of heritage to your wardrobe with these exquisite pieces.</p>
+            <div class="profile">
+                <img src="artisan1.jpg" alt="Artisan" class="profile-img">
+                <span class="profile-name">Artisan Name</span>
+            </div>
+        </div>
+        <div id="popup1" class="popup">
+            <button class="close-btn" onclick="closePopup('popup1')">Close</button>
+            <img src="textile1.jpg" alt="Handwoven Textile" class="post-img">
+            <h2 class="category">Textiles</h2>
+            <a href="#" class="post-title">The Art of Handwoven Fabrics</a>
+            <span class="post-date">12 Feb 2024</span>
+            <p class="post-description">Discover the intricate process behind handwoven textiles, where each thread is woven with care and tradition. Add a touch of heritage to your wardrobe with these exquisite pieces.</p>
+        </div>
+        
+        <div class="overlay" onclick="closePopup('popup1')"></div>
+        <!-- Post 2 -->
+        <div class="post-box food" onclick="openPopup('popup2')">
+            <img src="img2.jpg" alt="" class="post-img">
+            <h2 class="category">Pottery</h2>
+            <a href="#" class="post-title">Masterpieces in Clay: Handcrafted Pottery</a>
+            <span class="post-date">15 Mar 2024</span>
+            <p class="post-description">Explore the world of handcrafted pottery, where skilled artisans shape clay into beautiful and functional works of art. Each piece is a testament to the timeless art of pottery.</p>
+            <div class="profile">
+                <img src="artisan2.jpg" alt="Artisan" class="profile-img">
+                <span class="profile-name">Artisan Name</span>
+            </div>
+        </div>
+        <div id="popup2" class="popup">
+            <button class="close-btn" onclick="closePopup('popup2')">Close</button>
+            <img src="pottery1.jpg" alt="Handcrafted Pottery" class="post-img">
+            <h2 class="category">Pottery</h2>
+            <a href="#" class="post-title">Masterpieces in Clay: Handcrafted Pottery</a>
+            <span class="post-date">15 Mar 2024</span>
+            <p class="post-description">Explore the world of handcrafted pottery, where skilled artisans shape clay into beautiful and functional works of art. Each piece is a testament to the timeless art of pottery.</p>
+        </div>
+        
+        <div class="overlay" onclick="closePopup('popup2')"></div>
+        <!-- Post 3 -->
+        <div class="post-box food" onclick="openPopup('popup3')">
+            <img src="img3.jpg" alt="" class="post-img">
+            <h2 class="category">Jewelry</h2>
+            <a href="#" class="post-title">Timeless Beauty: Handmade Jewelry</a>
+            <span class="post-date">20 Apr 2024</span>
+            <p class="post-description">Delve into the art of handmade jewelry, where each piece is crafted with precision and love. Discover unique designs that add a personal touch to any outfit.</p>
+            <div class="profile">
+                <img src="artisan3.jpg" alt="Artisan" class="profile-img">
+                <span class="profile-name">Artisan Name</span>
+            </div>
+        </div>
+        <div id="popup3" class="popup">
+            <button class="close-btn" onclick="closePopup('popup3')">Close</button>
+            <img src="jewelry1.jpg" alt="Handmade Jewelry" class="post-img">
+            <h2 class="category">Jewelry</h2>
+            <a href="#" class="post-title">Timeless Beauty: Handmade Jewelry</a>
+            <span class="post-date">20 Apr 2024</span>
+            <p class="post-description">Delve into the art of handmade jewelry, where each piece is crafted with precision and love. Discover unique designs that add a personal touch to any outfit.</p>
+        </div>
+        
+        <div class="overlay" onclick="closePopup('popup3')"></div>
+        
+    </div>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>We are passionate about preserving the art of handmade craftsmanship. Our platform connects you with skilled artisans, offering you a chance to own a piece of art that is truly one-of-a-kind.</p>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="sec contactBx">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <a href="https://www.google.com/maps?q=Sector+58,+Noida,+Uttar+Pradesh" target="_blank">
+                        <span><i class='bx bxs-map'></i></span>
+                        <span>Sector 58, <br> Noida<br> Uttar Pradesh</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-envelope' ></i></span>
+                        <p><a href="mailto:codemyhobby9@gmail.com">madhurharsh66@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="blog.js"></script>
+</body>
+</html>

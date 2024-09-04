@@ -1,0 +1,57 @@
+
+body {
+    font-family: sans-serif;
+    background-color: #cb4154;
+    background-image: url(handicraft\ purse.webp);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background: #b03a2e;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* transition: all 2s step-start; */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fdf6e3;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    /* transition: all 2s step-start; */
+}
+
+.product-img {
+    width: 50%;
+    height: 300px;
+    border-radius: 8px;
+    background-size: cover;
+    /* transition: all 2s step-start; */
+
+}
+
+.product-details {
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
